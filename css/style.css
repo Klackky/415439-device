@@ -167,9 +167,23 @@ input[type="search"]{
 }
 .login-img:hover,
 .compare-text:hover,
-.basket-text:hover{
-	color:#bcac72;
+.basket-text:hover,
+.login-img:hover:before,
+.basket-text:hover:before,
+.compare-text:hover:before{
+	opacity: 0.8;
 }
+
+.login-img:active,
+.compare-text:active,
+.basket-text:active,
+.login-img:active:before,
+.basket-text:active:before,
+.compare-text:active:before{
+ opacity: 0.5;
+}
+
+
 .compare-text::before{
 	content:url(../img/compare.svg);
 	margin-right:9px;

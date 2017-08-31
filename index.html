@@ -17,7 +17,7 @@
               <form class="form-search" action ="#" method = "post">
                  <label class="search-form-label" for="search-head">Поиск </label>
                  <input class="search-form-input" type="search" id = "search-head" name="search" placeholder="Поиск по сайту">
-                 <button class="search-submit" type="submit" name="submit"> Поиск </button>
+                 <button class="search-submit" type="submit" name="submit"> Найти </button>
               </form>
            </div>
            <div class="user-features">
@@ -34,9 +34,8 @@
         </div>
         <ul class="main-nav">
            <li>
+           <div class="dropdown">
               <a href="#" class="catalog"> Каталог товаров </a>
-              <div class="dropdown">
-                 <img class="plus" src="img/plus.png" width="16" height="16" alt="plus">
                  <div class="dropdown-content">
                     <ul class="first-column">
                        <li class="first-item-column"> <a class="dropdown-item" href="#"> Виртуальная реальность </a></li>
@@ -139,27 +138,27 @@
  <div class="menu">
      <div class="item">
        <a class="item-link vr" href = "#">  </a>
-		<p class="item-text"> Виртуальная реальность </p>
+		<a class="item-text" href="#"> Виртуальная реальность </a>
 	 </div>
 	 <div class="item">
 	    <a class="item-link monopod" href = "#"> </a>
-		<p class="item-text monopod-text"> Моноподы для селфи </p>
+		<a class="item-text monopod-text" href="#"> Моноподы для селфи </a>
 	 </div>
 	 <div class="item">
 	    <a class="item-link camera" href = "#"> </a>
-		<p class="item-text"> Экшн-камеры </p>
+		<a class="item-text" href="#"> Экшн-камеры </a>
 	 </div>
 	 <div class="item">
 	    <a class="item-link fitness" href = "#"> </a>
-		<p class="item-text"> Фитнес-браслеты </p>
+		<a class="item-text" href="#"> Фитнес-браслеты </a>
 	 </div>
 	 <div class="item">
 	   <a class="item-link smartwatch" href = "#"> </a>
-		<p class="item-text"> Умные часы</p>
+		<a class="item-text" href="#"> Умные часы</a>
 	 </div>
 	 <div class="item">
 	    <a class="item-link quadrokopter" href = "#"> </a>
-		<p class="item-text"> Квадрокоперы</p>
+		<a class="item-text" href="#"> Квадрокоптеры</a>
 	 </div>
 	 </div>
 </div>
@@ -215,19 +214,19 @@
   <p class="text-info contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает. </p>
 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4498.179703080083!2d37.52689062959126!3d55.687425600238065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sul.+Stroiteley%2C+15%2C+Moskva%2C+Russia%2C+119311!5e0!3m2!1sen!2sus!4v1502401180813" width="560" height="220"  style="border:0" allowfullscreen></iframe>
   <a class="write-us" href="#">Напишите нам</a>
-  <div class="popup-write-us">
-  <form class="form-write-us">
-  <button class="close-popup" type="button" name="button"> Закрыть </button>
+<div class="popup-write-us">
+     <form class="form-write-us">
+     <button class="close-popup" type="button" name="button"> Закрыть </button>
    <div class="label-wrapper">
        <label class="label-your-name" for="your-name"> Ваше имя:</label>
 	   	<label class="label-your-email" for="your-name"> Ваш e-mail:</label>
 	</div>
-        <input type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста">
-		<input type="text" name="email" id="email" placeholder="Для отправки ответа">
+    <input type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста" required>
+		<input type="text" name="email" id="email" placeholder="Для отправки ответа" required>
 		<label class="label-textarea" for="text"> Текст письма: </label>
 		<textarea class="your-text" id="text" name="text" placeholder="В свободной форме"></textarea>
 	<button class="send"> Отправить </button>
-  </form>
+     </form>
   </div>
   </section>
 </div>
@@ -235,11 +234,11 @@
 <footer class="main-footer">
  <div class="footer-wrapper">
  <div class="first-line">
-  <p class="footer-logo"> Device </p>
+  <a class="footer-logo-link" href="#"><img class="footer-logo" src="img/device-y.png" width="164" height="36" alt="Device"> </a>
     <div class="footer-user-block">
-      <a class="footer-login-img" href="#"> Войти </a>
-	  <a href="#" class="footer-compare-text"> Сравнить </a>
-	  <a href="#" class="footer-basket-text"> Корзина </a>
+      <a class="footer-login-img footer-icons" href="#"> Войти </a>
+	  <a href="#" class="footer-compare-text footer-icons"> Сравнить </a>
+	  <a href="#" class="footer-basket-text footer-icons"> Корзина </a>
   </div>
   </div>
   <div class="footer-main-container">
@@ -255,14 +254,40 @@
 </div>
 <div class="third-line">
   <div class="social-links">
-       <a class="social" href="#"> <img src="img/facebook.png" width="32" height="32" alt="facebook"> </a>
-       <a class="social" href="#"> <img src="img/instagram.png" width="32" height="32" alt="facebook"> </a>
-       <a class="social" href="#"> <img src="img/twitter.png" width="32" height="32" alt="facebook"> </a>
+       <a class="social" href="#"> <img src="img/facebook.svg" width="32" height="32" alt="facebook"> </a>
+       <a class="social" href="#"> <img src="img/instagram.svg" width="32" height="32" alt="instagram"> </a>
+       <a class="social" href="#"> <img src="img/twitter.svg" width="32" height="32" alt="twitter"> </a>
 	</div>
-   <a class="htmlacademy-logo" href="#"> <img src="img/htmlacademy.png" width="27" height="34" alt="htmlacademy"> </a>
+   <a class="htmlacademy-logo" href="#"> <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy"> </a>
 </div>
 </div>
 </footer>
 </div>
-<script type="text/javascript" src="script.js"> </script>
+<script>
+     var link = document.querySelector(".write-us");
+     var popup = document.querySelector(".popup-write-us");
+     var close = popup.querySelector(".close-popup");
+     var login = popup.querySelector("[name=your-name]");
+
+     link.addEventListener("click", function(event) {
+       event.preventDefault();
+       popup.classList.add("popup-write-us-show");
+
+
+     close.addEventListener("click", function(event) {
+     event.preventDefault();
+     popup.classList.remove("popup-write-us-show");
+    });
+
+    window.addEventListener("keydown", function(event) {
+      if (event.keyCode === 27) {
+        if (popup.classList.contains("popup-write-us-show")) {
+          popup.classList.remove("popup-write-us-show");
+        }
+      }
+    });
+
+});
+   </script>
+
 </body>

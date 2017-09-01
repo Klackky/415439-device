@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
    <meta charset="utf-8">
-    <title>My site/ Welcome</title>
+    <title>Девайс</title>
 	<link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
@@ -10,7 +10,7 @@
 <body>
 <div class="page-container">
   <header class="main-header">
-     <a class="logo-link" href="#"><img class="logo" src="img/logo.png" width="163" height="36" alt="Device">  </a>
+     <a class="logo-link" href="index.html"><img class="logo" src="img/logo.png" width="163" height="36" alt="Device">  </a>
      <div class="header-container">
         <div class="user-block">
            <div class="search-block">
@@ -47,7 +47,7 @@
                        <li class="second-item-column"> <a class="dropdown-item" href="#">Умные часы </a></li>
                     </ul>
                     <ul class="third-column">
-                       <li class="third-item-column"> <a class="dropdown-item" href="#">Квадрокоперы </a></li>
+                       <li class="third-item-column"> <a class="dropdown-item" href="#">Квадрокоптеры </a></li>
                     </ul>
                  </div>
               </div>
@@ -61,28 +61,28 @@
            <li>
               <a href="#" class="contacts"> Контакты </a>
            </li>
-
         </ul>
      </div>
   </header>
 <div class="wrap">
-<input class="slider-radio slide-1" id ="slide-1" type="radio" name="slide" value="first" checked>
-<input class="slider-radio slide-2" id="slide-2" type="radio" name="slide" value="second">
-<input class="slider-radio slide-3" id="slide-3" type="radio" name="slide" value="third">
-<div class="slider-controls">
-  <label class="slider-circle" for="slide-1"> 1</label>
-  <label class="slider-circle" for="slide-2"> 2</label>
-  <label class="slider-circle"  for="slide-3"> 3</label>
-  </div>
 <div class="slideshow-container">
+  <input class="slider-radio slide-1" id ="slide-1" type="radio" name="slide" value="first" checked>
+  <input class="slider-radio slide-2" id="slide-2" type="radio" name="slide" value="second">
+  <input class="slider-radio slide-3" id="slide-3" type="radio" name="slide" value="third">
+  <div class="slider-controls">
+    <label class="slider-circle" for="slide-1"> 1</label>
+    <label class="slider-circle" for="slide-2"> 2</label>
+    <label class="slider-circle"  for="slide-3"> 3</label>
+    </div>
+  <div class="slides">
   <div class="slide slide-first clearfix">
+    <span class="number-slide">01 </span>
      <img class="slider-img" src="img/selfie-stick.png" width="384" height="486" alt="selfie-stick">
       <div class="description">
 	  <h1 class="slider-text"> Делай селфи, <br>как Бен Стиллер! </h1>
-	  <p class="slider-p first-slider-p"> Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм. </p>
-	  <a href="#" class="more"> Подробнее </a>
+    <p class="slider-p first-slider-p"> Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм. </p>
+    <a href="#" class="more"> Подробнее </a>
 	 <div class="about-stick">
-	   <span class="number-slide">01 </span>
 	   <div class="numbers-container">
 	     <div class="number-wrapper">
 	      <p class="numbers"> 8,5 м </p>
@@ -135,28 +135,29 @@
 	</div>
 	</div>
 </div>
+</div>
  <div class="menu">
-     <div class="item">
+     <div class="index-item">
        <a class="item-link vr" href = "#">  </a>
 		<a class="item-text" href="#"> Виртуальная реальность </a>
 	 </div>
-	 <div class="item">
+	 <div class="index-item">
 	    <a class="item-link monopod" href = "#"> </a>
-		<a class="item-text monopod-text" href="#"> Моноподы для селфи </a>
+		<a class="item-text monopod-text" href="catalog.html"> Моноподы для селфи </a>
 	 </div>
-	 <div class="item">
+	 <div class="index-item">
 	    <a class="item-link camera" href = "#"> </a>
 		<a class="item-text" href="#"> Экшн-камеры </a>
 	 </div>
-	 <div class="item">
+	 <div class="index-item">
 	    <a class="item-link fitness" href = "#"> </a>
 		<a class="item-text" href="#"> Фитнес-браслеты </a>
 	 </div>
-	 <div class="item">
+	 <div class="index-item">
 	   <a class="item-link smartwatch" href = "#"> </a>
 		<a class="item-text" href="#"> Умные часы</a>
 	 </div>
-	 <div class="item">
+	 <div class="index-item">
 	    <a class="item-link quadrokopter" href = "#"> </a>
 		<a class="item-text" href="#"> Квадрокоптеры</a>
 	 </div>
@@ -172,7 +173,7 @@
            <label class="slider-service-text button-warranty" for="service-2"> Гарантия</label>
            <label class="slider-service-text button-credit"  for="service-3"> Кредит </label>
  </div>
-<div class="services-wrapper">
+<div class="services-wrapper clearfix">
 <section class="service-slide delivery">
 	<h2 class="services-header"> Доставка </h2>
 	<p class="services-text"> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -212,7 +213,13 @@
   <section class="about-contacts">
   <h2 class="header-about"> Контакты </h2>
   <p class="text-info contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает. </p>
+<div class="map">
+  <iframe class="contacts_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4498.179703080083!2d37.52689062959126!3d55.687425600238065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sul.+Stroiteley%2C+15%2C+Moskva%2C+Russia%2C+119311!5e0!3m2!1sen!2sus!4v1502401180813" width="560" height="220"  style="border:0" allowfullscreen></iframe>
+</div>
+  <div class="map-popup">
+    <button  class="close close-map" type="button" name="button">Закрыть</button>
 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4498.179703080083!2d37.52689062959126!3d55.687425600238065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sul.+Stroiteley%2C+15%2C+Moskva%2C+Russia%2C+119311!5e0!3m2!1sen!2sus!4v1502401180813" width="560" height="220"  style="border:0" allowfullscreen></iframe>
+</div>
   <a class="write-us" href="#">Напишите нам</a>
 <div class="popup-write-us">
      <form class="form-write-us">
@@ -258,36 +265,11 @@
        <a class="social" href="#"> <img src="img/instagram.svg" width="32" height="32" alt="instagram"> </a>
        <a class="social" href="#"> <img src="img/twitter.svg" width="32" height="32" alt="twitter"> </a>
 	</div>
-   <a class="htmlacademy-logo" href="#"> <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy"> </a>
+   <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy"> </a>
+
 </div>
 </div>
 </footer>
-</div>
-<script>
-     var link = document.querySelector(".write-us");
-     var popup = document.querySelector(".popup-write-us");
-     var close = popup.querySelector(".close-popup");
-     var login = popup.querySelector("[name=your-name]");
-
-     link.addEventListener("click", function(event) {
-       event.preventDefault();
-       popup.classList.add("popup-write-us-show");
-
-
-     close.addEventListener("click", function(event) {
-     event.preventDefault();
-     popup.classList.remove("popup-write-us-show");
-    });
-
-    window.addEventListener("keydown", function(event) {
-      if (event.keyCode === 27) {
-        if (popup.classList.contains("popup-write-us-show")) {
-          popup.classList.remove("popup-write-us-show");
-        }
-      }
-    });
-
-});
-   </script>
+  <script type="text/javascript" src="js/script.js"></script>
 
 </body>

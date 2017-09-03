@@ -165,7 +165,7 @@
             </div>
          </div>
          <section class="services">
-            <div class="services-clearfix">
+            <div class="services-clearfix clearfix">
                <input class="slider-service service-1" id ="service-1" type="radio" name="toggle"  checked>
                <input class="slider-service service-2" id="service-2" type="radio" name="toggle" >
                <input class="slider-service service-3" id="service-3" type="radio" name="toggle" >
@@ -173,7 +173,7 @@
                   <label class="slider-service-text button-delivery" for="service-1"> Доставка </label>
                   <label class="slider-service-text button-warranty" for="service-2"> Гарантия</label>
                   <label class="slider-service-text button-credit"  for="service-3"> Кредит </label>
-               </div>
+                </div>
                <div class="services-wrapper clearfix">
                   <section class="service-slide delivery">
                      <h2 class="services-header"> Доставка </h2>
@@ -219,6 +219,10 @@
                <div class="map">
                   <iframe class="contacts_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4498.179703080083!2d37.52689062959126!3d55.687425600238065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sul.+Stroiteley%2C+15%2C+Moskva%2C+Russia%2C+119311!5e0!3m2!1sen!2sus!4v1502401180813" width="560" height="220"  style="border:0" allowfullscreen></iframe>
                </div>
+               <div class="map-popup">
+                 <iframe class="contacts_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4498.179703080083!2d37.52689062959126!3d55.687425600238065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sul.+Stroiteley%2C+15%2C+Moskva%2C+Russia%2C+119311!5e0!3m2!1sen!2sus!4v1502401180813" width="560" height="220"  style="border:0" allowfullscreen></iframe>
+                 <button class="close-popup close-map" type="button" name="button"> Закрыть </button>
+               </div>
                <a class="write-us" href="writeus.html">Напишите нам</a>
                <div class="popup-write-us">
                   <form class="form-write-us">
@@ -227,8 +231,10 @@
                         <label class="label-your-name" for="your-name"> Ваше имя:</label>
                         <label class="label-your-email" for="your-name"> Ваш e-mail:</label>
                      </div>
-                     <input type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста" required>
-                     <input type="text" name="email" id="email" placeholder="Для отправки ответа" required>
+                     <div class="input-wrapper">
+                        <input type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста" required>
+                        <input type="text" name="email" id="email" placeholder="Для отправки ответа" required>
+                      </div>
                      <label class="label-textarea" for="text"> Текст письма: </label>
                      <textarea class="your-text" id="text" name="text" placeholder="В свободной форме"></textarea>
                      <button class="send"> Отправить </button>

@@ -1,7 +1,7 @@
 body {
     margin: 0px auto;
     background-color: white;
-    font-family: 'Gilroy', Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     min-width: 1240px;
 }
 @font-face {
@@ -109,7 +109,7 @@ body {
     flex-wrap: wrap;
     font-size: 18px;
     text-transform: uppercase;
-    font-family: 'Gilroy', Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-weight: bold;
     list-style-type: none;
     padding: 0px;
@@ -151,9 +151,9 @@ a:visited {
     line-height: 36px;
     letter-spacing: 0px;
     z-index: 100;
-    height: 155px;
     background-color: #f7e296;
     width: 1160px;
+    padding-bottom: 45px;
 }
 .dropdown:hover .dropdown-content {
     visibility: visible;
@@ -203,7 +203,7 @@ input[type="search"] {
 }
 ::-webkit-input-placeholder {
     font-size: 15px;
-    font-family: 'Open sans', Arial, sans-serif;
+    font-family: "Open sans", Arial, sans-serif;
     color: #b8a974;
 }
 .login-img::before {
@@ -244,7 +244,7 @@ input[type="search"] {
     margin-left: 543px;
     margin-top: -36px;
     display: flex;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     color: #635a3c;
 }
@@ -259,7 +259,7 @@ input[type="search"] {
     border: 2px solid black;
     background-color: #f7e296;
     cursor: pointer;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
     left: 0.3px;
@@ -363,7 +363,7 @@ input[type="search"] {
     margin-top: -14px;
     padding-left: 90px;
     padding-right: 29px;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-weight: 100;
     width: 460px;
 }
@@ -393,7 +393,7 @@ input[type="search"] {
 }
 .desc {
     font-size: 13px;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-weight: 100;
     line-height: 20px;
     letter-spacing: 0.01em;
@@ -436,7 +436,7 @@ input[type="search"] {
 .slide-1:checked ~ .slider-controls label[for="slide-1"],
 .slide-2:checked ~ .slider-controls label[for="slide-2"],
 .slide-3:checked ~ .slider-controls label[for="slide-3"] {
-    background: url('../img/slider-button-on.svg');
+    background: url("../img/slider-button-on.svg");
 }
 .slide {
     position: relative;
@@ -449,8 +449,8 @@ input[type="search"] {
 .slider-circle {
     display: inline-block;
     vertical-align: middle;
-    content: '';
-    background: url('../img/slider-button.svg');
+    content: "";
+    background: url("../img/slider-button.svg");
     background-repeat: no-repeat;
     margin-right: 20px;
     width: 12px;
@@ -458,8 +458,8 @@ input[type="search"] {
     cursor: pointer;
 }
 input[name="slide"]:checked+.slider-circle::before {
-    content: '';
-    background: url('../img/radio-on.svg');
+    content: "";
+    background: url("../img/radio-on.svg");
     background-repeat: no-repeat;
 }
 .slider-controls {
@@ -558,11 +558,9 @@ input[name="slide"]:checked+.slider-circle::before {
     cursor: pointer;
 }
 .services {
-    height: 287px;
     background-color: #e5e5e5;
-    display: flex;
-    margin-top: 118px;
     position: relative;
+    margin-top: 117px;
 }
 .delivery,
 .warranty,
@@ -629,33 +627,27 @@ input[name="slide"]:checked+.slider-circle::before {
     padding-left: 20px;
 }
 .service-slide {
-    position: relative;
+   position: relative;
     display: none;
-    position: absolute;
     top: -30px;
     left: 400px;
-    overflow: hidden;
+    padding-bottom: 100px;
 }
-.services-wrapper {
-    position: relative;
-}
+
 .delivery {
     background: url(../img/delivery.png);
     background-repeat: no-repeat;
     background-position: 63.5% 11%;
-    height: 280px;
 }
 .warranty {
     background: url(../img/warranty.png);
     background-repeat: no-repeat;
     background-position: 60% 10%;
-    height: 280px;
 }
 .credit {
     background: url(../img/credit.png);
     background-repeat: no-repeat;
     background-position: 60% 10%;
-    height: 280px;
 }
 .services-header {
     font-size: 47px;
@@ -667,7 +659,7 @@ input[name="slide"]:checked+.slider-circle::before {
 .services-text {
     width: 456px;
     line-height: 30px;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-weight: 200;
     letter-spacing: 0.3px;
     font-size: 15px;
@@ -718,7 +710,7 @@ input[name="slide"]:checked+.slider-circle::before {
     line-height: 30px;
     margin-bottom: 30px;
     padding-right: 3px;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-weight: 300;
 }
 .transport-companies {
@@ -746,6 +738,13 @@ input[name="slide"]:checked+.slider-circle::before {
     margin-bottom: 70px;
 }
 /*modal-form */
+/*modal-form-animation */
+.popup-write-us-show{
+  animation: fadeIn 0.6s ease forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
 
 .popup-write-us {
     width: 958px;
@@ -801,14 +800,19 @@ input[name="your-name"] {
     background-color: #f2f2f2;
     margin-left: 100px;
     padding-left: 15px;
+    outline: none;
+    border: none;
+    display: block;
 }
 input[name="email"] {
     width: 335px;
     height: 50px;
     background-color: #f2f2f2;
-    float: right;
-    margin-right: 100px;
+    margin-left: 55px;
     padding-left: 15px;
+    outline: none;
+    border: none;
+    display: block;
 }
 input[name="your-name"]:hover,
 input[name="email"]:hover,
@@ -819,16 +823,19 @@ input[name="your-name"]:focus,
 input[name="email"]:focus,
 textarea:focus {
     background-color: #ffffff;
-    border: 3px solid #f7e296;
-    outline: 0 none;
+    outline: 3px solid #f7e296;
 }
 input[name="your-name"]:invalid:focus,
 input[name="email"]:invalid:focus {
     background-color: #f6dada;
+    border: none;
 }
 .label-wrapper {
     display: flex;
     margin-top: 90px;
+}
+.input-wrapper {
+    display: flex;
 }
 .label-your-name {
     display: block;
@@ -851,6 +858,9 @@ textarea {
     margin-left: 100px;
     padding-left: 15px;
     padding-top: 10px;
+    outline: none;
+    border: none;
+    display: block;
 }
 .send {
     font-weight: bold;
@@ -982,7 +992,7 @@ textarea {
     color: #ffffff;
     opacity: 0.7;
     letter-spacing: 0px;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-weight: 200;
 }
 .footer-basket-text {
@@ -1001,7 +1011,7 @@ textarea {
 .footer-phone-number {
     color: #ffffff;
     font-size: 15px;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     line-height: 30px;
     margin-top: -9px;
     font-weight: 100;
@@ -1109,7 +1119,7 @@ textarea {
     font-size: 14px;
     line-height: 36px;
     font-weight: 100;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     color: #b2b2b2;
     vertical-align: middle;
 }
@@ -1124,7 +1134,7 @@ textarea {
     line-height: 36px;
     letter-spacing: 0.01em;
     font-weight: 100;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     color: #b2b2b2;
 }
 .breadcrumbs-page::after {
@@ -1171,7 +1181,7 @@ textarea {
 .sort-by {
     font-size: 14px;
     line-height: 18px;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     color: #adadad;
     margin-right: 25px;
 }
@@ -1232,7 +1242,7 @@ textarea {
 }
 .add-to-compare {
     font-size: 13px;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     letter-spacing: 0.01em;
     line-height: 36px;
     color: #777777;
@@ -1311,13 +1321,13 @@ input[type="checkbox"]+label {
     cursor: pointer;
 }
 input[type="checkbox"]:not(checked) + label::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: -2px;
     width: 25px;
     height: 25px;
-    background: url('../img/checkbox.svg');
+    background: url("../img/checkbox.svg");
     background-repeat: no-repeat;
 }
 input[type="checkbox"]:not(checked) + label:hover::before {
@@ -1327,13 +1337,13 @@ input[type="checkbox"]:not(checked) + label:active::before {
     opacity: 1;
 }
 input[type="checkbox"]:checked + label::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -2px;
     left: 0;
     width: 25px;
     height: 25px;
-    background: url('../img/checkbox-on.svg');
+    background: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
 }
 .header-in-filter {
@@ -1362,13 +1372,13 @@ input[type="radio"] {
     display: none;
 }
 input[type="radio"]:checked+label::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: -2px;
     width: 25px;
     height: 25px;
-    background: url('../img/radio-on.svg');
+    background: url("../img/radio-on.svg");
     background-repeat: no-repeat;
 }
 input[type="radio"]:checked+label:hover::before {
@@ -1378,13 +1388,13 @@ input[type="radio"]:checked+label:active::before {
     opacity: 1;
 }
 input[type="radio"]:not(checked)+label::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: -2px;
     width: 25px;
     height: 25px;
-    background: url('../img/radio-off.svg');
+    background: url("../img/radio-off.svg");
     background-repeat: no-repeat;
 }
 input[type="radio"]+label {
@@ -1410,6 +1420,7 @@ input[type="radio"]+label {
 .monopod-item-text {
     margin-top: 30px;
     margin-bottom: 50px;
+    width: 360px;
 }
 .item-price {
     font-size: 16px;
@@ -1432,6 +1443,8 @@ input[type="radio"]+label {
     background-color: #ebebeb;
     list-style: none;
     display: flex;
+    justify-content: center;
+    position: relative;
     padding: 0px;
     margin-top: -10px;
 }
@@ -1445,12 +1458,13 @@ input[type="radio"]+label {
     text-transform: uppercase;
 }
 .back {
-    margin-right: 213px;
     width: 97px;
     display: block;
     height: 45px;
     padding-top: 25px;
     padding-left: 30px;
+    position: absolute;
+    left: 0px;
 }
 .forward {
     width: 105px;
@@ -1458,7 +1472,8 @@ input[type="radio"]+label {
     height: 45px;
     padding-top: 25px;
     padding-left: 22px;
-    margin-left: 177px;
+    position: absolute;
+    right: 0px;
 }
 .forward:hover,
 .back:hover {
@@ -1470,11 +1485,12 @@ input[type="radio"]+label {
     background-color: #d9d9d9;
 }
 .number {
-    margin-right: 28px;
     color: #222222;
     opacity: 0.4;
     margin-top: 25px;
     display: block;
+    margin-left: 14px;
+    margin-right: 14px;
 }
 .number:hover {
     opacity: 0.7;
@@ -1520,8 +1536,11 @@ input[type="radio"]+label {
 .arrow:active {
     opacity: 1;
 }
+.about-stick{
+  width: 700px; 
+}
 .up {
-    background: url('../img/up.svg');
+    background: url("../img/up.svg");
     background-repeat: no-repeat;
     text-indent: -9999px;
     opacity: 0.3;
@@ -1530,7 +1549,7 @@ input[type="radio"]+label {
     top: 30px;
 }
 .down {
-    background: url('../img/down.svg');
+    background: url("../img/down.svg");
     background-repeat: no-repeat;
     text-indent: -9999px;
     opacity: 1;
@@ -1588,6 +1607,9 @@ input[type="radio"]+label {
     input[type="search"] {
         height: 45px;
     }
+    .footer-basket-text::before{
+      margin-right: 2px;
+    }
 }
 @-moz-document url-prefix() {
     .plus {
@@ -1597,12 +1619,35 @@ input[type="radio"]+label {
     }
 }
 .map-popup {
+    font-size: 0;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    z-index: 11;
+    -webkit-box-shadow: 0 5px 15px #444444;
+    -moz-box-shadow: 0 5px 15px #444444;
+    box-shadow: 0 5px 15px #444444;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
     display: none;
 }
+
 .map-popup-show {
     display: block;
 }
 .map{
   background-image: url(../img/map.jpg);
   background-size: cover;
+  background-color: #e5e5e5;
+}
+.map-popup iframe {
+  width: 960px;
+  height: 560px;
+  border: 0;
+}
+.close-map{
+  top:15px;
 }

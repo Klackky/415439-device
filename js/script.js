@@ -19,8 +19,8 @@ window.addEventListener("keydown", function(event) {
      popup.classList.remove("popup-write-us-show");
    }
  }
-});
 
+});
 
 var btnMap = document.querySelector(".map");
 var map = document.querySelector(".map-popup");
@@ -35,6 +35,8 @@ event.preventDefault();
 map.classList.remove("map-popup-show");
 
 });
+
+
 
 
 });
